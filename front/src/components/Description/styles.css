@@ -1,0 +1,56 @@
+.app-wrap {
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.title {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.description {
+  text-align: justify;
+  line-height: 1.5em;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 1.563em auto;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 21.875em;
+  box-shadow: 0 0 1.25em rgba(255, 255, 255, 0.375);
+}
+
+table thead tr {
+  background-color: #51a9c2;
+  color: #ffffff;
+  text-align: left;
+}
+
+table th,
+table td {
+  padding: 0.75em 0.938em;
+  text-align: center;
+}
+
+table tbody tr {
+  border-bottom: 0.063em solid #dddddd;
+}
+
+table tbody tr:nth-of-type(even) {
+  background-color: whitesmoke;
+}
+
+table tbody tr:last-of-type {
+  border-bottom: 0.125em solid #51a9c2;
+}
+
+table tbody tr.active-row {
+  color: #51a9c2;
+}
+
+.day-table {
+  display: block;
+}

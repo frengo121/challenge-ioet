@@ -1,0 +1,50 @@
+.wrap-exercise {
+  padding-bottom: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.subtitle {
+  font-size: 1.125em;
+}
+
+label {
+  display: block;
+  padding-bottom: 1em;
+}
+
+input {
+  color: #51a9c2;
+}
+
+input[type="file"]::file-selector-button {
+  border: solid 1px whitesmoke;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+button {
+  border: 1px solid #51a9c2;
+  background: transparent;
+  color: whitesmoke;
+  border-radius: 3px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-top: 10px;
+  font-size: 0.9em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #51a9c2;
+  border-color: whitesmoke;
+}
+
+button:disabled,
+button[disabled] {
+  opacity: 0.7;
+  cursor: not-allowed;
+}

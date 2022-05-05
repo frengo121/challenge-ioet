@@ -1,0 +1,29 @@
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1.25em;
+  padding-bottom: 0;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.logo {
+  max-width: 3.125em;
+  width: 100%;
+  animation: App-logo-spin infinite 20s linear;
+}
+
+.text {
+  font-size: 0.75em;
+  margin: 0;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
