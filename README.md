@@ -9,12 +9,12 @@ For the right manage of the times my approach was to transform to number all the
 The steps of all the project are:
 
 - Load and send the file (.txt) from the client.
-- Read this file from API.
-- Save it in local the file.
+- Get file contents from request.
+- Save the file locally in server.
 - Split the string for employee, then for each day, and finally, for hours.
 - Apply the business logic.
 - Response with the rates and employees to client.
-- Show the results in a table.
+- Display results in table.
 
 ## Installation
 
