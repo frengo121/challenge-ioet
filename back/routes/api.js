@@ -6,8 +6,8 @@ const helpers = require('../modules/helpers');
 
 router.post('/readfile', async function (req, res) {
   const folder = path.resolve(__dirname, '..');
-  fs.writeFileSync(folder + '/frengo.txt', req.files.schedules.data);
-  fs.readFile(folder + '/frengo.txt', 'utf8', (err, data) => {
+  fs.writeFileSync(folder + '/data/employees.txt', req.files.schedules.data);
+  fs.readFile(folder + '/data/employees.txt', 'utf8', (err, data) => {
     if (err) {
       console.error(err);
       return;
