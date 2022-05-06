@@ -9,48 +9,50 @@ const Description = () => {
         hours they want. They will pay for the hours worked based on the day of
         the week and time of day, according to the following table:
       </p>
-      <table className="table-description">
-        <thead>
-          <tr>
-            <th colSpan="2">Monday - Friday</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>00:01 - 09:00</td>
-            <td>25 USD</td>
-          </tr>
-          <tr className="active-row">
-            <td>09:01 - 18:00</td>
-            <td>15 USD</td>
-          </tr>
-          <tr>
-            <td>18:01 - 00:00</td>
-            <td>20 USD</td>
-          </tr>
-        </tbody>
-      </table>
-      <table className="table-description">
-        <thead>
-          <tr>
-            <th colSpan="2">Saturday and Sunday</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>00:01 - 09:00</td>
-            <td>30 USD</td>
-          </tr>
-          <tr className="active-row">
-            <td>09:01 - 18:00</td>
-            <td>20 USD</td>
-          </tr>
-          <tr>
-            <td>18:01 - 00:00</td>
-            <td>25 USD</td>
-          </tr>
-        </tbody>
-      </table>
+      <div className="wrap-tables">
+        <table className="table-description">
+          <thead>
+            <tr>
+              <th colSpan="2">Monday - Friday</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>00:01 - 09:00</td>
+              <td>25 USD</td>
+            </tr>
+            <tr className="active-row">
+              <td>09:01 - 18:00</td>
+              <td>15 USD</td>
+            </tr>
+            <tr>
+              <td>18:01 - 00:00</td>
+              <td>20 USD</td>
+            </tr>
+          </tbody>
+        </table>
+        <table className="table-description">
+          <thead>
+            <tr>
+              <th colSpan="2">Saturday and Sunday</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>00:01 - 09:00</td>
+              <td>30 USD</td>
+            </tr>
+            <tr className="active-row">
+              <td>09:01 - 18:00</td>
+              <td>20 USD</td>
+            </tr>
+            <tr>
+              <td>18:01 - 00:00</td>
+              <td>25 USD</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
       <p className="description">
         The goal of this exercise is to calculate the total that the company has
         to pay an employee, based on the hours they worked and the times during
