@@ -29,6 +29,20 @@ make run-client
 make run test
 ```
 
+When run the commands, you sould have these routes:
+
+**SERVER:** localhost:4000
+
+**CLIENT:** localhost: 3000
+
+## Example file
+
+You can use the example .txt file to test. This file is on this direction:
+
+```bash
+back/data/example-file.txt
+```
+
 ## Tech Stack
 
 - Front:
