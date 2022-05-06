@@ -12,15 +12,14 @@ const validateSchedule = (day, schedule) => {
   const firstTime = timeToNumber(schedule.split('-')[0]);
   const lastTime = timeToNumber(schedule.split('-')[1]);
 
-  if (normalDays.includes(day)) {
-    if (firstTime >= 1 && lastTime <= 900) value = 25;
-    if (firstTime >= 901 && lastTime <= 1800) value = 15;
-    if (firstTime >= 1801 && (lastTime == 0 || lastTime <= 2359)) value = 20;
-  } else if (weekendDays.includes(day)) {
-    if (firstTime >= 1 && lastTime <= 900) value = 30;
-    if (firstTime >= 901 && lastTime <= 1800) value = 20;
-    if (firstTime >= 1801 && (lastTime == 0 || lastTime <= 2359)) value = 25;
-  } else {
+  const extraWeekendRate = 5;
+  if (firstTime >= 1 && lastTime <= 900) value = 25;
+  if (firstTime >= 901 && lastTime <= 1800) value = 15;
+  if (firstTime >= 1801 && (lastTime == 0 || lastTime <= 2359)) value = 20;
+
+  if (weekendDays.includes(day)) {
+    value += extraWeekendRate;
+  } else if (!normalDays.includes(day)) {
     value = 0;
   }
   return value;
@@ -58,6 +57,7 @@ const generateResponse = people => {
 
 module.exports = {
   normalDays,
+  weekendDays,
   timeToNumber,
   validateSchedule,
   validateHour,

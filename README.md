@@ -2,6 +2,20 @@
 
 This project is about a Challenge for the IOET company about the ACME exercise.
 
+## Solution approach
+
+For the right manage of the times my approach was to transform to number all the times, for example, if the time is "12:00" I am reading it like 1200. With this is more easier.
+
+The steps of all the project are:
+
+- Load and send the file (.txt) from the client.
+- Read this file from API.
+- Save it in local the file.
+- Split the string for employee, then for each day, and finally, for hours.
+- Apply the business logic.
+- Response with the rates and employees to client.
+- Show the results in a table.
+
 ## Installation
 
 For the instalation, just clone this repo in a local folder, like:
@@ -26,7 +40,7 @@ make run-server
 make run-client
 
 #To run the test on server
-make run test
+make test
 ```
 
 When run the commands, you sould have these routes:

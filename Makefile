@@ -9,4 +9,4 @@ init:
 	@ cd front; npm install
 
 test:
-	@cd back; npm run converage
+	@cd back; npm run coverage
